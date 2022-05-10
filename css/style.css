@@ -17,37 +17,35 @@ body  {
 .haeder {
     display: flex;
     justify-content: space-between;
-    color: maroon;
-    font-size: 20px;
+    color: beige;
     align-items: center;
     max-height: 100%;
-   
+    background: #6A9113;
+    background: -webkit-linear-gradient(to right, #141517, #6A9113);
+    background: linear-gradient(to right, #141517, #6A9113);
 }
 
 .titulo__principal {
-    color:maroon;
+    color: beige;
     
     
 }
 
  .nav   {
-     margin: 0px;
-     padding: 0px;
-     
-     
+     display: flex;
+     justify-content: flex-end;
+     background: #6A9113;
+     background: -webkit-linear-gradient(to right, #141517, #6A9113);
+     background: linear-gradient(to right, #141517, #6A9113);
+       
  }
-
  
  .nav__lista {
      list-style: none;
      display: flex;
      flex-direction: row;
      justify-content: flex-end;
-     border-style: solid;
-     border-radius: 20px;
      
-    
-
      
 }
 
@@ -60,7 +58,7 @@ body  {
 
  .nav__enlase   {
      text-decoration: none;
-     color:maroon;
+     color:beige;
      padding: 10px;
      
     
@@ -68,15 +66,14 @@ body  {
 
 .presentacion {
     text-align: center;
-    height: 100px;
     font-size: 20px;
-    color: maroon;
+    color: beige;
   
 
 }
 
 .presentacion__subtitulo    {
-    color: maroon;
+    color: beige;
     font-weight: bolder;
     
 }
@@ -86,7 +83,7 @@ body  {
    flex-direction: row;
    justify-content: space-evenly;
    object-fit: cover;
- 
+
 
 }
 
@@ -108,7 +105,7 @@ body  {
 .texto__imagen  {
     color:beige;
     position: absolute;
-    left: 40%;
+    left: 70%;
     bottom: 15%;
     transform: translate(-40% );
     
@@ -128,52 +125,34 @@ body  {
    
 }
 
-h2  {
-    color:grey;
-    padding: 10px;
-    margin: 10px;
-}
- 
 /*Pie de pagina de todas mis paginas*/
 .footer     {
     width: 100%;
-    display: flex;
+    
     justify-content: space-between;
-
 }
-
 .footer__titulo {
     color:beige;
-    align-self: flex-end;
-    padding: 20px;
-   
+    text-align: end;
     
-
-     
+   
 }
 
 .footer__subtitulo  {
-    color:maroon;
-    
-  
+    color:beige;
 }
 
 .iconos {
     display: flex;
-    
 
-    
 } 
  .iconos i  {
      padding-left: 5px;
- }
-
-
-
-.footer__contacto {
-    margin: 10px;
 }
 
+.footer__contacto {
+    margin: 5px;
+}
 .main__imagen2 {
     width: 500px;
     height: 500px;
@@ -184,9 +163,9 @@ h2  {
 .titulo    {
     color: khaki;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    margin: 15px;
 }
+
 
 .imagen__pagnosotros  {
     float: left;
@@ -196,22 +175,24 @@ h2  {
 }
 
 .titulo__parrafo    {
-    color: maroon;
+    color: beige;
     font-weight:bold;
+   
+    
 }
 
 
 /* pagina de Pregustas frecuentes*/
 
 .preguntas  {
-    color:khaki;
+    color:beige;
     margin: 0px;
     font-weight: bold;
 }
 
 .preguntas__respuestas  {
    margin: 0px;
-   color: maroon;
+   color: beige;
    font-weight: bolder;
 
 }
@@ -250,10 +231,6 @@ h2  {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
-
-
-
 }
 
 .grid__hijo--1  {
@@ -299,7 +276,7 @@ form  {
 h4 {
  text-align: center;
  height: 30px;
- color: darkred;
+ color: beige;
  font-size: 20px;
  
 
@@ -369,26 +346,35 @@ input,text {
 /*Media Querie*/
 
   @media screen and (max-width: 1023px) {
-     h1     {
-         flex-direction: column;
-     }
-      
-     #lateral   {
-         display: none;
-     }
+        .haeder {
+            display: none;
+            display: flex;
+            flex-direction: column;
+        }
+    
  }
 
   @media screen and  (max-width: 600px)     {
-    h1 {
-        font-size: 20px;
-        
+     
+      .haeder {
+          display: none;
+          text-align: center;
+      }
+    
+    .nav__lista {
+        display: none;
+        flex-direction: column;
     }
-    
-    
-     .nav   {
-             display: none;
-             
-         }
+
+    .titulo__principal  {
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+      
+    }
+
 
     .header__open   {
         display: block;
@@ -397,35 +383,14 @@ input,text {
         color: beige;
 
     }
-
     
-     .main1  {
-            font-size: 10px;
-            text-align: center;
-            
-        }
-
-
-    .main__imagen1  {
-        display: none;
-
+    .contenedor__imagen {
+        flex-direction: column;
+       
     }
 
-     .footer__titulo    {
-         font-size: 10px;
-         text-align: center;
-         
-     }
 
-     .footer__subtitulo {
-         font-size: 15px;
-         text-align: center;
-     }
-
-     .minireseña    {
-         font-size: 5px;
-         text-align: center;
-     }
+     
 
     .grid  {
         display: none;
@@ -435,10 +400,5 @@ input,text {
     }
 
 
-    .nav__lista {
-        display: flex;
-        flex-direction: column;
-    }
- 
-   }
-
+   
+}
