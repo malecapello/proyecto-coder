@@ -78,40 +78,58 @@ body  {
     
 }
 
-.contenedor__imagen {    
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   object-fit: cover;
 
-
-}
-
-.imagen__inicio {
+.imagen__inicio     {
     padding: 10px;
     display: flex;
     flex-direction: row;
     align-self: center;
     border-radius: 70%;
+    animation-name: efecto;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+ 
+}
+
+@keyframes efecto {
+    0% {    
+        transform: rotate(0deg);
+    }
+
+    50%     {
+        transform: rotate(360deg);
+    }
+
+    100%    {
+        transform: rotate(0deg);
+    }
+
 }
 
 
-
-.contenedor__padre  {
+.contenedor__imagen  {
     position: relative;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    object-fit: cover;
+
+   
+   
 }
 
-.texto__imagen  {
+.texto__imagen {
     color:beige;
     position: absolute;
-    left: 70%;
+    left: 40%;
     bottom: 15%;
     transform: translate(-40% );
     
     
 }
-
+ 
 
  main p {
      color:beige;
@@ -119,9 +137,10 @@ body  {
 
  
 
-.dedicatoria {
+.parrafo__inicio {
     font-size: 20px;
     text-align: center;
+    color: beige;
    
 }
 
