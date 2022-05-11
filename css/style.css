@@ -74,7 +74,7 @@ body  {
 
 .presentacion__subtitulo    {
     color: beige;
-    font-weight: bolder;
+    text-align: center;
     
 }
 
@@ -115,6 +115,8 @@ body  {
     flex-direction: row;
     justify-content: space-evenly;
     object-fit: cover;
+   
+
 
    
    
@@ -126,6 +128,8 @@ body  {
     left: 40%;
     bottom: 15%;
     transform: translate(-40% );
+    line-height: 1.2;
+    font-size: 19px;
     
     
 }
@@ -147,18 +151,20 @@ body  {
 /*Pie de pagina de todas mis paginas*/
 .footer     {
     width: 100%;
-    
-    justify-content: space-between;
+    justify-content:flex-start;
 }
 .footer__titulo {
     color:beige;
     text-align: end;
+    font-size: 10px; 
     
    
 }
 
 .footer__subtitulo  {
     color:beige;
+    font-size: 20px;
+    
 }
 
 .iconos {
@@ -166,7 +172,7 @@ body  {
 
 } 
  .iconos i  {
-     padding-left: 5px;
+     padding-left: 10px;
 }
 
 .footer__contacto {
@@ -295,54 +301,8 @@ form  {
 h4 {
  text-align: center;
  height: 30px;
- color: beige;
+ color:orange;
  font-size: 20px;
- 
-
-}
-
-.contenedor {
-    text-align: center;
-    height: 30px;
-    color: beige;
-    font-style: italic;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 30px;
-}
-
-.contenedor1    {
-    text-align: center;
-    height: 30px;
-    color:beige;
-    font-style: italic;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 30px;
-    
-}
-
-.contenedor2    {
-    text-align: center;
-    height: 30px;
-    color:beige;
-    font-style: italic;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 30px;
-    
-}
-
-h5  {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 15px;
-    
-}
-
-.contenedor3  {
-    text-align: center;
-    font-size: 15px;
 }
 
 .boton__envio {
@@ -360,6 +320,10 @@ input,text {
     border-radius: 5px;
     padding: 10px;
     
+}
+
+.mb-3   {
+    color: beige;
 }
 
 /*Media Querie*/
@@ -420,4 +384,12 @@ input,text {
 
 
    
+}
+
+
+/* prueba carruser*/
+
+ .carousel-item {
+    width: 200px;
+    height: 200px;
 }
